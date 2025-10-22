@@ -9,6 +9,12 @@ DELETE
 from gold_facts_sales where order_date = '' order by order_date  ; 
 
 
+
+
+
+
+
+
 select
 year(order_date) as order_year, 
 sum(sales_amount) as total_sales,
@@ -43,9 +49,12 @@ order by date_format(order_date,'%Y-%m-01'), month(order_date);
 
 
 
+
+
+
+
+
 -- cumulative analysis 
-
-
 select 
 order_date,
 total_sales,
@@ -74,11 +83,6 @@ from gold_facts_sales
 where order_date is not null
 group by year(order_date)
 order by year(order_date)) as t ;
-
-
-
-
-
 
 
 
@@ -158,6 +162,12 @@ order by total_sales desc ;
 
 
 
+
+
+
+
+
+
 -- Data Segmentation 
 -- segment products in to cost ranges and count how many segments fall into each segment 
 
@@ -179,15 +189,6 @@ count(product_key) as total_products
 from product_segments
 group by cost_range
 order by total_products desc ;
-
-
-
-
-
-
-
-
-
 
 
 
@@ -224,15 +225,6 @@ from (
 	from customer_spending) t 
 group by customer_segment
 order by total_customers desc ;
-
-
-
-
-
-
-
-
-
 
 
 
@@ -310,9 +302,7 @@ case
 	when total_number= 0 then 0 
 	else total_sales/total_number 
 end as avg_order_value ,
-
 -- calculating averaage monthly spend
-
 case
 	 when lifespan = 0 then total_sales 
      else total_sales/lifespan
@@ -320,15 +310,6 @@ end as avg_monthly_spend
 
 from customer_aggregation
 );
-
-
-
-
-
-
-
-
-
 
 
 
