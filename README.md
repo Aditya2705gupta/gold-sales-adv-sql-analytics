@@ -71,12 +71,3 @@ The SQL script contains useful analytics examples and a reusable customer view:
 
 - The SQL uses MySQL-compatible date/time functions. If you run on another engine, adapt functions accordingly.
 - The Python loader assumes the JSON files map directly to table columns. Adjust column names and types if necessary.
-
-## Contact
-
-- Repository owner: `Aditya2705gupta`
-- Email used in this repo setup: `aditya2705gupta@gmail.com`
-
----
-
-Feel free to request a script to automate the full setup (DB creation, data load, and running the SQL file) for your environment.
