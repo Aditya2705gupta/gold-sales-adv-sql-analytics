@@ -23,3 +23,8 @@ The SQL script contains useful analytics examples and a reusable customer view:
 - Product segmentation: bucket products into cost ranges and count per segment.
 - Customer segmentation: classify customers into `VIP`, `Regular`, and `New` based on lifespan and spending.
 - `gold_report_customers` view: prebuilt customer-level report with recency, frequency, monetary metrics, age groups, segments, and average order/monthly spend.
+
+
+<img width="1414" height="2000" alt="7" src="https://github.com/user-attachments/assets/3d9c1e34-8ba8-478c-9d82-81bf24500c25" />
+
+<img width="1414" height="2000" alt="8" src="https://github.com/user-attachments/assets/c093a8c0-c9e6-4ccc-9fff-3aeb0fb9fc34" />
